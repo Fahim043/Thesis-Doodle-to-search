@@ -11,10 +11,10 @@ Often, we struggle to find the right words to describe what we're looking for, e
 
 ## Data
 
-The dataset used in this project contains manually drawn doodle images of products and their captions along their real names in webpages, which was made by crowsourcing and researching by us. Unfortunately due to some restrictions, the dataset was not uploaded here.
+The dataset used in this project contains manually drawn doodle images of products and their captions along with their real names on webpages, which was made by crowdsourcing and researching by us. Unfortunately due to some restrictions, the dataset was not uploaded here.
 
 ![](ss-images/1.png)
-Fig: Preview of Initial Data collection
+Fig: Preview of Initial Data Collection
 
 
 ![](ss-images/2.png)
@@ -27,13 +27,13 @@ The project follows these key steps:
 1. **Object Annotation, Data Loading and Preprocessing**:
    - The doodles had many white spaces so using YoloV8x we detected the doodles and took the bounding box co-ordinates and cropped the images to reduce white spaces.
    - Before loading we converted all the images to RGB format.
-   - We cleaned the captions as well by removing punctuations, removed single letters and unnecessary words as lower-casing everything.
-   - We also used word2number library to convert all the digits into words.
+   - We cleaned the captions as well by removing punctuations, single letters, and unnecessary words as lower-casing everything.
+   - We also used the word2number library to convert all the digits into words.
 
-\
+
 ## **Implementation**:
 
-- We tested our data on several different advanced AI models for checking and comparison on which is work the best.
+- We tested our data on several different advanced AI models for checking and comparison on which works the best.
 
 ## **Models**:
    - ****Xception encoder and Decoder model****:
@@ -95,11 +95,12 @@ ResNet-50 is a variant of the ResNet model, which stands for Residual Network1. 
 ***Residual Blocks***: ResNet forms networks by stacking residual blocks. A residual block uses a shortcut connection that “skips over” some layers, converting a regular network into a residual network.
 
 ***Bottleneck Design***: The 50-layer ResNet uses a bottleneck design for the building block. A bottleneck residual block uses 1x1 convolutions, known as a “bottleneck”, which reduces the number of parameters and matrix multiplications.
-Pretrained on ImageNet: The pretrained neural network can classify images into 1000 object categories.
+Pretrained on ImageNet: The pre-trained neural network can classify images into 1000 object categories.
 
 ***Performance***: Despite its depth, ResNet-50 is less complex than VGGNet and can achieve faster performance.
 
 ![](ss-images/8.png)
+
 Fig: Restnet50 architecture
 
 ***Results:***
@@ -111,7 +112,7 @@ Fig: Preview of the results
 
 To run this project locally, you can follow these steps:
  - Clone the repository to your local machine.
- - Run the project's main script to generate search query.
+ - Run the project's main script to generate a search query.
 
 ## The project is organized as follows:
 
@@ -128,8 +129,8 @@ The project utilizes the following Python libraries:
 - matplotlib
 - transformer
 - accelerators
-- tensorflow
-- keras
+- TensorFlow
+- Keras
 - word2number
 - nltk
 
@@ -139,4 +140,4 @@ These dependencies can be easily installed using the `pip install` command.
 
 This project was created by MD Fahim Afridi Ani. You can contact the author via Email: fahimafridi043@gmail.com.
 
-Enjoy exploring and trying to get search query from doodle cloth images!
+Enjoy exploring and trying to get search queries from doodle cloth images!
